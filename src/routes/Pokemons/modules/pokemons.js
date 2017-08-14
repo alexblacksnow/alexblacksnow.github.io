@@ -46,7 +46,7 @@ function receivePokemons(params, response) {
 function fetchPokemons(params) {
   return (dispatch) => {
     dispatch(requestPokemons(params));
-    return axios.get(`http://pokeapi.co/api/v2/${params}`)
+    return axios.get(`https://pokeapi.co/api/v2/${params}`)
       .then(response => dispatch(receivePokemons(params, response)));
   };
 }
