@@ -1,0 +1,12 @@
+import React from 'react';
+import './PageLayout.scss';
+
+export const PageLayout = ({ children }) => (
+  <div className='container text-center'>
+    <div className='page-layout__viewport'>
+      {children}
+    </div>
+  </div>
+);
+
+export default PageLayout;
